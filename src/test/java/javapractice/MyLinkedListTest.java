@@ -11,9 +11,9 @@ public class MyLinkedListTest {
         MyNode<Integer> myThirdNode = new MyNode<>(56);
         MyLinkedList myLinkedList = new MyLinkedList();
         myLinkedList.add(myFirstNode);
-        myLinkedList.add(mySecondNode);
-        myLinkedList.add(myThirdNode);
-        myLinkedList.printMyNodes();
+        myLinkedList.append(mySecondNode);
+        myLinkedList.append(myThirdNode);
+       // myLinkedList.printMyNodes();
         boolean result = myLinkedList.head.equals(myThirdNode) &&
                 myLinkedList.head.getNext().equals(mySecondNode) &&
                 myLinkedList.tail.equals(myFirstNode);
