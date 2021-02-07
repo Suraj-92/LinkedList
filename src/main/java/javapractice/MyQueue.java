@@ -18,4 +18,12 @@ public class MyQueue {
     public INode add() {
         return myLinkedList.tail;
     }
+
+    public INode add1() {
+        return myLinkedList.head;
+    }
+
+    public void deQueue(INode myNode) {
+        myLinkedList.add(myNode);
+    }
 }
